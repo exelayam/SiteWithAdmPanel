@@ -1,0 +1,13 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+<ol>
+    {% for name in all_customer %}
+    <li>{{ name.name }} {{ name.phone }}
+        {% endfor %}</li>
+</ol>
+<ol>
+    {% for name in all_executor %}
+    <li>{{ name.name }} {{ name.phone }}
+        {% endfor %}</li>
+</ol>
+{% endblock body %}
